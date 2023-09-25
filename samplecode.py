@@ -3,7 +3,7 @@ import numpy as np
 import psycopg2
 
 def read_file():
-    file = open('sample_file.txt', 'r')
+    file = open('task_epyphite/sample_file.txt', 'r')
 
     data = file.readlines()
     road_id = []
@@ -85,4 +85,4 @@ def db_connection(host, user, password, database):
 db_connection(host = 'localhost',
               user = 'postgres',
               password = 'postgres',
-              database = 'lokeshrakurthi')
+              database = 'mydatabase')
